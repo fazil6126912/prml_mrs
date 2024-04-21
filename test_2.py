@@ -54,8 +54,7 @@ def recommend_model(movies_knn, option,files):
             elements = [int(x) for x in line.strip().split(',')]
             if elements[0] == option:
                 ids = elements[1:]
-    # index = movies[movies['Title'] == movie].index[0]
-    # distances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
+                
     recommended_movie_names = []
     recommended_movie_posters = []
     tmdbId_list = []
